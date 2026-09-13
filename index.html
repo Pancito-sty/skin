@@ -1,20 +1,20 @@
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>skin. — bare beauty</title>
+  <title>skin. — complexion & contour</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
   <div class="page-container">
-    <header class="bento-card header-nav">
-      <div class="brand">skin.</div>
+    <!-- Header Navegación -->
+    <header class="header-nav">
+      <div class="brand">✦ skin.</div>
       <nav>
         <ul>
           <li><a href="index.html" class="active">inicio</a></li>
@@ -25,67 +25,192 @@
       </nav>
     </header>
 
-    <main class="bento-grid">
-      <section class="bento-card hero-card">
-        <span class="tag">nueva colección</span>
-        <h1>bare beauty & conscious cosmetics</h1>
-        <p>fórmulas ligeras pensadas para acompañar tu piel, no para ocultarla.</p>
-        <a href="#catalogo" class="btn-main">explorar rutina</a>
+    <main>
+      <!-- Hero Section Editorial (Welcome) -->
+      <section class="hero-editorial">
+        <div class="hero-frame-wrapper">
+          <div class="polaroid-card">
+            <span class="tape-badge"></span>
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500" alt="Skin editorial aesthetic">
+            <span class="polaroid-caption">shade matching studio</span>
+          </div>
+        </div>
+        <div class="hero-text-wrapper">
+          <h1 class="welcome-title">Welcome</h1>
+          <p class="brand-tagline">fórmulas que abrazan cada matiz real de tu piel.</p>
+          <div class="hero-action-box">
+            <span class="badge-pill">complexion essentials</span>
+            <a href="#catalogo" class="btn-main">explorar tonos</a>
+          </div>
+        </div>
       </section>
 
-      <article class="bento-card highlight-card">
-        <h3>skin tint</h3>
-        <p>acabado natural, hidratación continua con ácido hialurónico.</p>
-        <span class="price">$14.990</span>
-      </article>
+      <!-- Cinta divisoria superior -->
+      <div class="marquee-strip">
+        <span>SKIN • SHADE • TEXTURE • COMPLEXION • GLOW • CONTOUR • HYDRATION • FORMULA • MATCH</span>
+      </div>
 
-      <section id="catalogo" class="bento-card catalog-section">
-        <h2>esenciales diarios</h2>
-        <div class="products-subgrid">
-          <article class="product-item">
-            <img src="https://images.unsplash.com/photo-1586495777744-4413f21062fa?w=300" alt="Bálsamo multiuso">
-            <h4>dewy balm</h4>
-            <p>bálsamo multiuso labios & mejillas</p>
-            <span>$8.990</span>
-            <button type="button" class="btn-small">agregar</button>
+      <!-- About Section (Estilo bloque oscuro con cameo circular) -->
+      <section class="about-section">
+        <div class="about-content">
+          <h2 class="about-heading">About Our Skin</h2>
+          <span class="byline">by skin. laboratory</span>
+          <p>
+            Entendemos la piel como un lienzo dinámico. Nuestra línea está creada exclusivamente 
+            para trabajar la arquitectura del rostro: desde la preparación con primers matificantes 
+            e hidratantes, bases de cobertura construible hasta contornos que esculpen con precisión.
+          </p>
+          <p>
+            Inspirados en la gama cromática del café, diseñamos tonos que complementan cada subtono 
+            sin enmascarar tu textura natural.
+          </p>
+          <div class="about-actions">
+            <a href="#catalogo" class="btn-outline-light">ver rutina</a>
+            <a href="registro.html" class="btn-solid-light">únete a la marca</a>
+          </div>
+        </div>
+
+        <div class="about-cameo-wrapper">
+          <div class="cameo-arch">
+            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=500" alt="Complexion routine">
+          </div>
+          <span class="cameo-label">by skin. studio</span>
+          <a href="#catalogo" class="cameo-link">click to discover</a>
+        </div>
+      </section>
+
+      <!-- Cinta divisoria intermedia -->
+      <div class="marquee-strip secondary-strip">
+        <span>DAILY ESSENTIALS ★ SHADE FINDER ★ DERMA APPROVED ★ CRUELTY FREE ★ FLAWLESS BASE</span>
+      </div>
+
+      <!-- Catálogo: 6 Productos en fichas verticales tipo revista -->
+      <section id="catalogo" class="catalog-section">
+        <div class="section-header">
+          <span class="tag">la colección de rostro</span>
+          <h2>esenciales de tez & contorno</h2>
+          <p>prepara, unifica y define con formulaciones de alta duración.</p>
+        </div>
+
+        <div class="products-grid">
+          <!-- Producto 1: Catrice HD Liquid Coverage -->
+          <article class="product-card">
+            <div class="product-photo-box">
+              <img src="img/catrice-hd.png" alt="Base Catrice HD Liquid Coverage">
+            </div>
+            <div class="product-info">
+              <h3>hd liquid coverage</h3>
+              <span class="category-tag">base líquida 24h</span>
+              <p>cobertura total ultraligera con niacinamida y acabado mate natural.</p>
+              <span class="price">$8.990</span>
+              <button type="button" class="btn-small">agregar</button>
+            </div>
           </article>
 
-          <article class="product-item">
-            <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=300" alt="Aceite nutritivo para labios">
-            <h4>espresso lip oil</h4>
-            <p>nutrición con toque café sutil</p>
-            <span>$9.990</span>
-            <button type="button" class="btn-small">agregar</button>
+          <!-- Producto 2: Maybelline Fit Me -->
+          <article class="product-card">
+            <div class="product-photo-box">
+              <img src="img/maybelline-fitme.png" alt="Base Maybelline Fit Me Matte and Poreless">
+            </div>
+            <div class="product-info">
+              <h3>fit me! matte+poreless</h3>
+              <span class="category-tag">base unificadora</span>
+              <p>minimiza poros y controla el brillo para pieles normales a grasas.</p>
+              <span class="price">$9.490</span>
+              <button type="button" class="btn-small">agregar</button>
+            </div>
           </article>
 
-          <article class="product-item">
-            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=300" alt="Gel fijador transparente">
-            <h4>brow & lash glaze</h4>
-            <p>gel fijador transparente ligero</p>
-            <span>$7.990</span>
-            <button type="button" class="btn-small">agregar</button>
+          <!-- Producto 3: Catrice Extreme Blur -->
+          <article class="product-card">
+            <div class="product-photo-box">
+              <img src="img/catrice-blur.png" alt="Primer Catrice Extreme Blur">
+            </div>
+            <div class="product-info">
+              <h3>extreme blur primer</h3>
+              <span class="category-tag">pre-base difuminadora</span>
+              <p>efecto filtro inmediato que alisa textura y prolonga el maquillaje.</p>
+              <span class="price">$6.990</span>
+              <button type="button" class="btn-small">agregar</button>
+            </div>
+          </article>
+
+          <!-- Producto 4: PZZO Primer Shine Control -->
+          <article class="product-card">
+            <div class="product-photo-box">
+              <img src="img/pzzo-primer.png" alt="Primer PZZO Shine Control">
+            </div>
+            <div class="product-info">
+              <h3>shine control primer</h3>
+              <span class="category-tag">hidratación & control</span>
+              <p>enriquecido con vitamina e para hidratar mientras matifica la zona t.</p>
+              <span class="price">$5.990</span>
+              <button type="button" class="btn-small">agregar</button>
+            </div>
+          </article>
+
+          <!-- Producto 5: Catrice Sculpt & Charm -->
+          <article class="product-card">
+            <div class="product-photo-box">
+              <img src="img/catrice-contour.png" alt="Stick Catrice Sculpt and Charm">
+            </div>
+            <div class="product-info">
+              <h3>sculpt & charm stick</h3>
+              <span class="category-tag">contorno en barra</span>
+              <p>fórmula cremosa de fácil difuminado para esculpir pómulos y mandíbula.</p>
+              <span class="price">$6.490</span>
+              <button type="button" class="btn-small">agregar</button>
+            </div>
+          </article>
+
+          <!-- Producto 6: NYX Highlight & Contour Palette -->
+          <article class="product-card">
+            <div class="product-photo-box">
+              <img src="img/nyx-palette.png" alt="Paleta NYX Highlight and Contour Pro">
+            </div>
+            <div class="product-info">
+              <h3>pro contour palette</h3>
+              <span class="category-tag">paleta 8 tonos</span>
+              <p>polvos profesionales para iluminar zonas altas y profundizar facciones.</p>
+              <span class="price">$19.990</span>
+              <button type="button" class="btn-small">agregar</button>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="bento-card video-card">
+      <!-- Video Card: Vogue Routine -->
+      <section class="editorial-card video-card">
         <div class="video-info">
-          <h2>glow routine</h2>
-          <p>técnicas de aplicación para un acabado natural y ligero en 5 minutos.</p>
+          <span class="tag">vogue masterclass</span>
+          <h2>glow & sculpting routine</h2>
+          <p>
+            aprende a integrar primer, base líquida y técnica de contorneado 
+            para lograr una dimensión natural en minutos.
+          </p>
+          <span class="video-quote">"skin first, sculpting second."</span>
         </div>
         <div class="iframe-wrapper">
           <iframe 
-            src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" 
-            title="skin. routine" 
+            src="https://www.youtube-nocookie.com/embed/O_qgaOUR3Fo" 
+            title="Sabrina Carpenter Vogue Beauty Routine" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen>
           </iframe>
         </div>
       </section>
     </main>
 
-    <footer class="bento-card footer-card">
-      <p>&copy; 2026 skin. cosmetics — todos los derechos reservados.</p>
-      <p>contacto: hola@skin.cl | santiago, chile</p>
+    <!-- Footer -->
+    <footer class="footer-card">
+      <div class="footer-top">
+        <div class="footer-brand">skin. cosmetics</div>
+        <p>especialistas en piel, fórmulas de alta fijación y tonos diseñados para ti.</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 skin. cosmetics — todos los derechos reservados.</p>
+        <p>contacto: hola@skin.cl | santiago, chile</p>
+      </div>
     </footer>
   </div>
 
