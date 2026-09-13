@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>skin. — registro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="page-container">
+    <header class="bento-card header-nav">
+      <div class="brand">skin.</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">inicio</a></li>
+          <li><a href="index.html#catalogo">productos</a></li>
+          <li><a href="login.html">ingresar</a></li>
+          <li><a href="registro.html" class="btn-pill active">crear cuenta</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="bento-grid auth-grid">
+      <section class="bento-card auth-hero">
+        <span class="tag">comunidad</span>
+        <h2>únete al cuidado diario</h2>
+        <p>accede a lanzamientos exclusivos de lotes pequeños y seguimiento para tu piel.</p>
+      </section>
+
+      <section class="bento-card form-container">
+        <h2>crear cuenta</h2>
+        <form id="form-registro" novalidate>
+          <div class="input-group">
+            <label for="nombre">nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="ej. Camilo Pérez" autocomplete="name">
+            <small class="error-msg" id="error-nombre"></small>
+          </div>
+
+          <div class="input-group">
+            <label for="email">correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@skin.cl" autocomplete="email">
+            <small class="error-msg" id="error-email"></small>
+          </div>
+
+          <div class="input-group">
+            <label for="password">contraseña</label>
+            <input type="password" id="password" name="password" placeholder="mínimo 6 caracteres" autocomplete="new-password">
+            <small class="error-msg" id="error-password"></small>
+          </div>
+
+          <button type="submit" class="btn-main full-width">registrarse</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bento-card footer-card">
+      <p>&copy; 2026 skin. cosmetics — todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="js/validaciones.js"></script>
+</body>
+</html>

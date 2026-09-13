@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>skin. — ingresar</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <div class="page-container">
+    <header class="bento-card header-nav">
+      <div class="brand">skin.</div>
+      <nav>
+        <ul>
+          <li><a href="index.html">inicio</a></li>
+          <li><a href="index.html#catalogo">productos</a></li>
+          <li><a href="login.html" class="active">ingresar</a></li>
+          <li><a href="registro.html" class="btn-pill">crear cuenta</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="bento-grid auth-grid">
+      <section class="bento-card auth-hero">
+        <span class="tag">bienvenido de vuelta</span>
+        <h2>inicia sesión</h2>
+        <p>revisa tus pedidos anteriores y mantén tu carrito actualizado.</p>
+      </section>
+
+      <section class="bento-card form-container">
+        <h2>ingresar</h2>
+        <form id="form-login" novalidate>
+          <div class="input-group">
+            <label for="login-email">correo electrónico</label>
+            <input type="email" id="login-email" name="email" placeholder="ejemplo@skin.cl" autocomplete="email">
+            <small class="error-msg" id="error-login-email"></small>
+          </div>
+
+          <div class="input-group">
+            <label for="login-password">contraseña</label>
+            <input type="password" id="login-password" name="password" placeholder="tu contraseña" autocomplete="current-password">
+            <small class="error-msg" id="error-login-password"></small>
+          </div>
+
+          <button type="submit" class="btn-main full-width">iniciar sesión</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bento-card footer-card">
+      <p>&copy; 2026 skin. cosmetics — todos los derechos reservados.</p>
+    </footer>
+  </div>
+
+  <script src="js/validaciones.js"></script>
+</body>
+</html>
